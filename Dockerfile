@@ -1,11 +1,7 @@
-FROM base/archlinux
+FROM base/archlinux AS docker-latex
 
-COPY install.sh /install.sh
-
-RUN chmod +x /install.sh
+COPY build.sh /build.sh
 
 RUN pacman -Syu
 
-RUN pacman -S wget --noconfirm
-
-RUN bash /install.sh
+RUN pacman -S texlive-most texlive-lang biber --noconfirm
