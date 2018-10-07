@@ -1,7 +1,7 @@
 #!/bin/bash
 
-INPUT="input"
-OUTPUT="output"
+INPUT="src"
+OUTPUT="build"
 
 for i in "${INPUT}"/*.tex; do
     pdflatex -output-directory "${OUTPUT}"/ "$i"

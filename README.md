@@ -10,7 +10,7 @@ Build using the following command:
 docker build .
 ```
 
-Place your documents in the `input/` directory. Proceed by running using docker-compose:
+Place your documents in the `src/` directory. Proceed by running using docker-compose:
 
 ```
 docker-compose run pdflatex

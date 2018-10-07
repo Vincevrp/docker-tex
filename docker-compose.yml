@@ -5,5 +5,5 @@ services:
     image: vincevrp/docker-tex
     command: bash /build.sh
     volumes:
-      - ./input:/input
-      - ./output:/output
+      - ./src:/src
+      - ./build:/build
