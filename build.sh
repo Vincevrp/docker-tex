@@ -3,9 +3,7 @@
 INPUT="input"
 OUTPUT="output"
 
-cd "${INPUT}" || exit 1
-
-for i in *.tex; do
+for i in "${INPUT}"/*.tex; do
     pdflatex -output-directory "${OUTPUT}"/ "$i"
     pdflatex -output-directory "${OUTPUT}"/ "$i"
 done
