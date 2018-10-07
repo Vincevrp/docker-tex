@@ -1,4 +1,12 @@
 #!/bin/bash
 
-pdflatex -output-directory output/ input/*.tex
-pdflatex -output-directory output/ input/*.tex
+INPUT="input"
+OUTPUT="output"
+
+cd "${INPUT}" || exit 1
+
+for i in *.tex; do
+    pdflatex -output-directory "${OUTPUT}"/ "$i"
+    pdflatex -output-directory "${OUTPUT}"/ "$i"
+done
+
