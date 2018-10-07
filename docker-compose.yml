@@ -1,4 +1,3 @@
-    #command: bash -c "pdflatex -output-directory output/ input/*.tex"
 version: '3'
 
 services:
