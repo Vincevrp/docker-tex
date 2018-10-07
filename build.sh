@@ -10,3 +10,4 @@ for i in *.tex; do
     pdflatex -output-directory "${OUTPUT}"/ "$i"
 done
 
+rm "${OUTPUT}"/*.{aux,log,out}
