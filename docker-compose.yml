@@ -1,0 +1,10 @@
+    #command: bash -c "pdflatex -output-directory output/ input/*.tex"
+version: '3'
+
+services:
+  pdflatex:
+    image: vincevrp/docker-tex
+    command: bash /build.sh
+    volumes:
+      - ./input:/input
+      - ./output:/output
