@@ -1,4 +1,4 @@
-FROM base/archlinux AS docker-latex
+FROM archlinux/base AS docker-latex
 
 RUN pacman -Sy
 
